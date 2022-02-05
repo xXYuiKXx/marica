@@ -1,0 +1,24 @@
+@keyframes paseito {
+    0% {
+        right: 0%;
+        transform: scaleY(-1)
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+#knuckles {
+    margin-top: 5em;
+    margin-left: 3em;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    animation-name: paseito;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-iteration-count: 25;
+    animation-timing-function: linear;
+    transition: 0s;
+    transform-style: preserve-3d;
+}

@@ -1,0 +1,21 @@
+body {
+    background-image: url("/no_importa/img/fondo.jpg");
+    /* The image used */
+    background-color: #e6c6c9;
+    /* Used if the image is unavailable */
+    height: 630px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: auto;
+    cursor: url("/no_importa/img/moneymouse.cur"), url("/no_importa/img/moneymouse.cur"), pointer;
+}
+
+.texto {
+    font-family: fantasy;
+    text-align: center;
+    font-style: oblique;
+    font-size: 20pt;
+}

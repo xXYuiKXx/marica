@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<audio autoplay="autoplay" loop="loop" m>
+    <source src="no_importa/music/minero.mp3" type="audio/mpeg">
+</audio>
+
+<head>
+    <title> Buenos dias culona</title>
+    <meta charset="UTF-8 ">
+    <link rel="stylesheet " type="text/css " href="no_importa/css/style1.css ">
+    <link rel="stylesheet " type="text/css " href="no_importa/css/labels.css ">
+    <link rel="stylesheet" href="no_importa/css/animation.css">
+
+
+
+    <script>
+        // Array con todas las imágenes que deseamos que se vayan cambiando a
+        // cada clic
+        var imagenes = Array("./no_importa/img/edith1.png", "./no_importa/img/edith1_2.png", "./no_importa/img/edith1_3.png", "./no_importa/img/edith1_4.png", "./no_importa/img/edith1_5.png");
+        var imagenVisible = 0;
+        var imagenes2 = Array("./no_importa/img/luz1.png", "./no_importa/img/luz2.png");
+        var imagenVisible2 = 0;
+
+        // Función que cambia la imagen actual por la siguiente
+        function cambiar(img) {
+            imagenVisible++;
+            if (imagenVisible >= imagenes.length) {
+                imagenVisible = 0;
+            }
+            img.src = imagenes[imagenVisible];
+            cargarSiguienteImagen();
+        }
+
+        function cambiar_luz(img) {
+            imagenVisible2++;
+            if (imagenVisible2 >= imagenes2.length) {
+                imagenVisible2 = 0;
+            }
+            img.src = imagenes2[imagenVisible2];
+            cargarSiguienteImagen2();
+        }
+
+        /**
+         * Esta función carga la siguiente imagen para no tener que esperar su carga
+         * en el momento de mostrarla.
+         */
+        function cargarSiguienteImagen() {
+            if ((imagenVisible + 1) < imagenes.length) {
+                console.log(imagenVisible + 1);
+                var imgTmp = new Image();
+                imgTmp.src = imagenes[imagenVisible + 1];
+            }
+        }
+
+        function cargarSiguienteImagen2() {
+            if ((imagenVisible2 + 1) < imagenes2.length) {
+                console.log(imagenVisible2 + 1);
+                var imgTmp = new Image();
+                imgTmp.src = imagenes2[imagenVisible2 + 1];
+            }
+        }
+
+
+        window.onload = function() {
+            cargarSiguienteImagen2()
+            cargarSiguienteImagen();
+        }
+    </script>
+
+    <style>
+        img {
+            cursor: url("/no_importa/img/quackity.cur"), url("/no_importa/img/quackity.cur"), pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="right ">
+        <img src="./no_importa/img/edith1.png" width="400" height="100" onclick="cambiar(this);">
+    </div>
+    <div align="center ">
+        <a title="Start" href="/no_importa/inicio.html"><img src="./no_importa/img/start.gif" width="306 " height="306 "></a>
+    </div>
+    <div align="left ">
+        <img src="./no_importa/img/luz1.png" width="400" height="100" onclick="cambiar_luz(this);">
+    </div>
+
+    <div><img src="/no_importa/img/knuckles.gif" alt="knuckles" id="knuckles">
+    </div>
+
+</body>
+
+<style>
+    body {
+        background-image: url('/no_importa/img/background1.jpeg');
+        background-size: 100% 100%;
+        cursor: url("/no_importa/img/quackity.cur"), url("/no_importa/img/quackity.cur"), default;
+    }
+</style>
+
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<audio autoplay>
+    <source src="music/inicio.mp3" type="audio/mpeg ">
+</audio>
+
+<head>
+    <title>Te quiero mucho wawa</title>
+    <meta charset="UTF-8 ">
+    <link rel="stylesheet " type="text/css " href="css/style1.css ">
+    <link rel="stylesheet " type="text/css " href="css/labels.css ">
+</head>
+
+<body>
+
+    <h1> <img src="./img/tittle.png" width="500"> </h1>
+    <table>
+        <tr>
+            <td>
+                <img src="./img/edith2.png" width="400" height="100">
+            </td>
+            <td>
+                <br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                </br>
+            </td>
+            <td>
+                <br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                </br>
+            </td>
+            <td>
+                <br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                </br>
+            </td>
+            <td>
+                <br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                </br>
+            </td>
+            <td>
+                <img src="./img/luz3.png" width="400" height="100" onclick="cambiar_luz(this);">
+            </td>
+
+        </tr>
+    </table>
+    <br>
+    </br>
+    <div align="center "><img src="img/carol.gif "></div>
+
+    <br>
+    </br>
+    <p class="pregunta ">¿Qué te parece?</p>
+    <div align="center ">
+        <a id=rectangulo class="texto_boton " href="button 1.html ">Sois unas maricas</a>
+    </div>
+
+</body>
+<style>
+    body {
+        background-image: url('/no_importa/img/background2.jpg');
+        background-size: cover;
+    }
+</style>
+<script>
+    var imagenes2 = Array("/no_importa/img/luz3.png", "/no_importa/img/luz4.png");
+    var imagenVisible2 = 0;
+
+    function cambiar_luz(img) {
+        imagenVisible2++;
+        if (imagenVisible2 >= imagenes2.length) {
+            imagenVisible2 = 0;
+        }
+        img.src = imagenes2[imagenVisible2];
+        cargarSiguienteImagen2();
+    }
+
+    function cargarSiguienteImagen2() {
+        if ((imagenVisible2 + 1) < imagenes2.length) {
+            console.log(imagenVisible2 + 1);
+            var imgTmp = new Image();
+            imgTmp.src = imagenes2[imagenVisible2 + 1];
+        }
+    }
+
+
+    window.onload = function() {
+        cargarSiguienteImagen2()
+    }
+</script>
+
+</html>

@@ -1,0 +1,78 @@
+body {
+    background-color: #018281;
+    font-family: 'Windows 95';
+    src: url('no_importa/fonts/w-95-sans-serif.woff2');
+    cursor: url("/no_importa/img/Diamond\ Sword\ -\ Normal\ Select.cur"), url("/no_importa/img/Diamond\ Sword\ -\ Normal\ Select.cur"), pointer;
+}
+
+a:hover {
+    cursor: url("/no_importa/img/Gold\ Sword\ -\ Link.cur"), url("/no_importa/img/Gold\ Sword\ -\ Link.cur"), pointer;
+}
+
+p {
+    color: white;
+}
+
+.texto_ventana {
+    color: black;
+}
+
+.card {
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid #393939;
+    border-bottom: 2px solid #393939;
+    border-radius: 0;
+    background: #C0C0C0;
+}
+
+.card-primary .card-header {
+    background: #C0C0C0;
+}
+
+.card-secondary .card-header {
+    background: #008081;
+    color: white;
+}
+
+.card-tertiary .card-header {
+    background: #000181;
+    color: white;
+}
+
+.card-header {
+    position: relative;
+    background: #808080;
+    font-size: .65rem;
+    padding: 4px;
+    color: #C9C9C9;
+    border-radius: 0;
+    border: 2px solid #BDBDBD;
+}
+
+.card-header .icon {
+    position: absolute;
+    top: -5px;
+    left: -3px;
+}
+
+.card-body {
+    padding: 10px 7px;
+    border-top: 2px solid #BDBDBD;
+    border-left: 3px solid #BDBDBD;
+    border-right: 3px solid #BDBDBD;
+    border-bottom: 2px solid #bdbdbd;
+}
+
+.card-footer {
+    padding: 10px 7px;
+}
+
+#ventana {
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid #393939;
+    border-bottom: 2px solid #393939;
+    border-radius: 0;
+    background: #C0C0C0;
+}

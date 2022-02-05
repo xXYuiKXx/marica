@@ -1,0 +1,23 @@
+.nombre {
+    font-size: 40pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.otro {
+    font-size: 20pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.titulo {
+    font-size: 50pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(188, 118, 245);
+}
+
+body {
+    background-image: url('https://empantallados.com/main-files/uploads/2020/10/Among-Us-Portada.gif');
+    background-size: cover;
+    cursor: url("/no_importa/img/WilburLarge.cur"), url("/no_importa/img/WilburLarge.cur"), pointer;
+}

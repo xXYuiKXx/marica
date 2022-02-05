@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<audio autoplay>
+        <source src="/no_importa/music/glamour.mp3" type="audio/mpeg">
+</audio>
+
+<head>
+    <title> Sus</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/fin.css">
+    <link rel="stylesheet" type="text/css" href="css/labels.css">
+</head>
+
+<body>
+    <div align="center" class="logro">
+        <img src="img/logro_final.png" width="300 " height="136 ">
+    </div>
+    <h1 align="center" class="titulo">The end</h1>
+    <table align="center">
+        <tbody>
+            <tr>
+                <td>
+                    <div align="center">
+                        <img src="./img/m1.gif" width="329 " height="306 ">
+                    </div>
+                </td>
+                <td>
+                    <div align="center">
+                        <img src="./img/m2.gif" width="229 " height="206 ">
+                    </div>
+                </td>
+                <td>
+                    <div align="center">
+                        <img src="./img/m3.gif" width="229 " height="206 ">
+                    </div>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+    $(".logro").hide();
+    $(document).ready(function() {
+        setTimeout(function() {
+            $(".logro").fadeIn(500);
+        }, 1000);
+        setTimeout(function() {
+            $(".logro").fadeOut(500);
+        }, 3000);
+
+    });
+</script>
+
+
+
+</html>
